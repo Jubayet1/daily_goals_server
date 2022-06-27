@@ -9,6 +9,6 @@ const router = express.Router();
 
 router.route("/").get(getGoals).post(postGoal);
 
-router.route("/id").put(updateGoal).delete(deleteGoal);
+router.route("/:id").put(updateGoal).delete(deleteGoal);
 
 module.exports = router;
